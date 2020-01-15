@@ -1,0 +1,4 @@
+[submodule "@luminati-io/luminati-proxy"]
+	path = vendor/luminati-io/luminati-proxy
+	url = git@github.com:luminati-io/luminati-proxy.git
+	ignore = dirty

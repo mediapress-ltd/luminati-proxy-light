@@ -1,0 +1,10 @@
+/script
+/.git
+
+# Ignore vendor junk
+/vendor/luminati-io/luminati-proxy/bin/pub
+/vendor/luminati-io/luminati-proxy/bin/*.sh
+/vendor/luminati-io/luminati-proxy/build
+/vendor/luminati-io/luminati-proxy/test
+/vendor/luminati-io/luminati-proxy/www
+/vendor/luminati-io/luminati-proxy/{.babelrc,.npmrc,.travis.yml,appveyor.yml,Dockerfile,publish_cn.js,publish_validate.js,webpack.config.js}
