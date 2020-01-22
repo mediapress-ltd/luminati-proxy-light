@@ -47,7 +47,6 @@
   },
   "files": [
     "bin/",
-    "vendor/",
     "types/"
   ],
   "types": "./types/luminati.d.ts",
@@ -57,7 +56,7 @@
   },
   "license": "ISC",
   "main": "bin/index.js",
-  "name": "luminati-proxy-light",
+  "name": "@nexusapp/luminati-proxy",
   "recomendedNode": ">=10.0",
   "scripts": {
     "update-vendor": "node ./script/update.js"
