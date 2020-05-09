@@ -13,7 +13,6 @@
     "express": "4.17.1",
     "extract-zip": "1.6.7",
     "http-shutdown": "1.2.1",
-    "jquery": "3.4.1",
     "json-stable-stringify": "1.0.1",
     "lodash": "4.17.15",
     "log-buffer": "0.0.3",
