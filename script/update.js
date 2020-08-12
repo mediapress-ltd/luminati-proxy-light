@@ -3,12 +3,14 @@ const { join } = require("path");
 const git = require("simple-git/promise");
 
 async function run(command, args = undefined, opts = undefined) {
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const child = spawn(command, args, opts);
     child.stdout.pipe(process.stdout);
     child.stderr.pipe(process.stderr);
 
-    child.on("exit", code => (code === 0 ? resolve(code) : process.exit(code)));
+    child.on("exit", (code) =>
+      code === 0 ? resolve(code) : process.exit(code)
+    );
   });
 }
 
@@ -26,18 +28,20 @@ async function update() {
       process.exit(1);
     }
 
-    console.log("Setting version for NPM...");
-    await run("npm", ["version", version, "--allow-same-version"]);
-
     console.log(`Updating vendor submodule to v${version}...`);
+    await git(repo).submoduleUpdate(["--remote"]);
     await git(vendorRepo).checkout(`v${version}`);
 
     console.log("Committing changes...");
     await git(repo).add("vendor/luminati-io/luminati-proxy");
-    await git(repo).commit([
+    await git(repo).commit(
       `Updated @luminati-io/luminati-proxy to v${version}`,
-      "--all --amend"
-    ]);
+      undefined,
+      { "--all": true, "--amend": true }
+    );
+
+    console.log("Setting version for NPM...");
+    await run("npm", ["version", version, "--allow-same-version"]);
   } catch (error) {
     console.error(error.toString());
     process.exit(1);

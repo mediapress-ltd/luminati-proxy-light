@@ -10,6 +10,7 @@
 yarn.lock
 nexusapp-luminati-proxy-*.tgz
 
+.DS_Store
 !/vendor
 
 # Ignore vendor junk
