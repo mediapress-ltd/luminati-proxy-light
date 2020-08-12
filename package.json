@@ -55,5 +55,5 @@
   "scripts": {
     "update-vendor": "node ./script/update.js"
   },
-  "version": "1.182.272"
+  "version": "1.194.180"
 }
