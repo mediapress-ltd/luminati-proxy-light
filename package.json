@@ -18,7 +18,7 @@
     "lum_crontab": "1.0.0",
     "lum_lokijs": "1.5.11",
     "lum_socksv5": "0.0.11",
-    "netmask": "1.0.6",
+    "netmask": "2.0.1",
     "node-forge": "0.6.46",
     "open": "7.0.0",
     "prompt-sync": "4.1.7",
