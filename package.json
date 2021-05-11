@@ -13,7 +13,7 @@
     "http-shutdown": "1.2.1",
     "js-cookie": "2.2.1",
     "json-stable-stringify": "1.0.1",
-    "lodash": "4.17.15",
+    "lodash": "4.17.21",
     "log-buffer": "0.0.3",
     "lum_crontab": "1.0.0",
     "lum_lokijs": "1.5.11",
