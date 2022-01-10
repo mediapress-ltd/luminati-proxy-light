@@ -20,7 +20,7 @@
     "lum_lokijs": "1.5.11",
     "lum_socksv5": "0.0.11",
     "netmask": "2.0.1",
-    "node-forge": "0.10.0",
+    "node-forge": "1.0.0",
     "pac-resolver": "5.0.0",
     "open": "7.0.0",
     "prompt-sync": "4.1.7",
